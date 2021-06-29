@@ -14,29 +14,54 @@ class ViewController: UIViewController {
     @IBOutlet var maxNumberTextField: UITextField!
     @IBOutlet var randomizerButton: UIButton!
     @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var randomizer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        randomizerButton.layer.cornerRadius = 32
+        
     }
     
     @IBAction func onRandomiz(sender: UIButton) {
         let numbers = getMinAndMaxNumber()
         let randomNumber = Int.random(in: numbers.min ... numbers.max)
+     
+        // animation
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.08
+        animation.repeatCount = 4
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: randomizer.center.x - 5, y: randomizer.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: randomizer.center.x + 5, y: randomizer.center.y))
+
+        randomizer.layer.add(animation, forKey: "position")
         
-        resultLabel.text = "\(randomNumber)"
-        // randomNumberAnimated(randomNumber, interval: numbers)
+        // increment with animation
+        incrementLabel(to: randomNumber)
     }
     
-    func randomNumberAnimated(_ finalRandomNumber: Int, interval: (min: Int, max: Int)) {
-        for _ in 1...10 {
-            let randomNumber = Int.random(in: interval.min ..< interval.max)
-            resultLabel.text = "\(randomNumber)"
+     func incrementLabel(to endValue: Int) {
+        let duration: Double = 1.0 // seconds
+
+        let currentValue = Int(resultLabel.text!)!
+        let itterate = abs(currentValue - endValue)
+        DispatchQueue.global().async {
+            for i in 0 ..< (itterate + 1) {
+                let sleepTime = UInt32(duration/Double(endValue) * 1000000.0)
+                usleep(sleepTime)
+                DispatchQueue.main.async {
+                    if (currentValue < endValue) {
+                        self.resultLabel.text = "\(currentValue + i)"
+                    } else {
+                        self.resultLabel.text = "\(currentValue - i)"
+                    }
+                    
+                }
+            }
         }
-        
-        resultLabel.text = "\(finalRandomNumber)"
     }
-    
+
     func getMinAndMaxNumber() -> (min: Int, max: Int) {
         let minString = minNumberTextField.text
         let maxString = maxNumberTextField.text

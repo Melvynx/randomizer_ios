@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9D551DE24B3B1D4003E437E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D551DD24B3B1D4003E437E /* GradientView.swift */; };
 		D9FD994724B36F1300374B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD994624B36F1300374B1A /* AppDelegate.swift */; };
 		D9FD994924B36F1300374B1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD994824B36F1300374B1A /* SceneDelegate.swift */; };
 		D9FD994B24B36F1300374B1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD994A24B36F1300374B1A /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9D551DD24B3B1D4003E437E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D9FD994324B36F1300374B1A /* RandomizerV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomizerV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FD994624B36F1300374B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9FD994824B36F1300374B1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		D9FD994524B36F1300374B1A /* RandomizerV2 */ = {
 			isa = PBXGroup;
 			children = (
+				D9D551DD24B3B1D4003E437E /* GradientView.swift */,
 				D9FD994624B36F1300374B1A /* AppDelegate.swift */,
 				D9FD994824B36F1300374B1A /* SceneDelegate.swift */,
 				D9FD994A24B36F1300374B1A /* ViewController.swift */,
@@ -202,6 +205,7 @@
 			files = (
 				D9FD994B24B36F1300374B1A /* ViewController.swift in Sources */,
 				D9FD994724B36F1300374B1A /* AppDelegate.swift in Sources */,
+				D9D551DE24B3B1D4003E437E /* GradientView.swift in Sources */,
 				D9FD994924B36F1300374B1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,12 +367,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23Y9NGHN84;
 				INFOPLIST_FILE = RandomizerV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.melvynx.RandomizerV2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.melvynx.RandomizerV22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,12 +385,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23Y9NGHN84;
 				INFOPLIST_FILE = RandomizerV2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.melvynx.RandomizerV2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.melvynx.RandomizerV22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
