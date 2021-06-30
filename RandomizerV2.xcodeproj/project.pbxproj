@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9BD7D4C268CAAAD006D871C /* BooleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7D4B268CAAAD006D871C /* BooleanViewController.swift */; };
+		D9BD7D4E268CAB72006D871C /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7D4D268CAB72006D871C /* NumbersViewController.swift */; };
 		D9D551DE24B3B1D4003E437E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D551DD24B3B1D4003E437E /* GradientView.swift */; };
 		D9FD994724B36F1300374B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD994624B36F1300374B1A /* AppDelegate.swift */; };
 		D9FD994924B36F1300374B1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD994824B36F1300374B1A /* SceneDelegate.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9BD7D4B268CAAAD006D871C /* BooleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanViewController.swift; sourceTree = "<group>"; };
+		D9BD7D4D268CAB72006D871C /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		D9D551DD24B3B1D4003E437E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D9FD994324B36F1300374B1A /* RandomizerV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomizerV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FD994624B36F1300374B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9BD7D4F268CAB8E006D871C /* Boolean */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD7D4B268CAAAD006D871C /* BooleanViewController.swift */,
+			);
+			path = Boolean;
+			sourceTree = "<group>";
+		};
+		D9BD7D50268CAB9A006D871C /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				D9BD7D4D268CAB72006D871C /* NumbersViewController.swift */,
+			);
+			path = Numbers;
+			sourceTree = "<group>";
+		};
+		D9BD7D51268CABA3006D871C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D9D551DD24B3B1D4003E437E /* GradientView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D9FD993A24B36F1300374B1A = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +109,9 @@
 		D9FD994524B36F1300374B1A /* RandomizerV2 */ = {
 			isa = PBXGroup;
 			children = (
-				D9D551DD24B3B1D4003E437E /* GradientView.swift */,
+				D9BD7D51268CABA3006D871C /* Utils */,
+				D9BD7D50268CAB9A006D871C /* Numbers */,
+				D9BD7D4F268CAB8E006D871C /* Boolean */,
 				D9FD994624B36F1300374B1A /* AppDelegate.swift */,
 				D9FD994824B36F1300374B1A /* SceneDelegate.swift */,
 				D9FD994A24B36F1300374B1A /* ViewController.swift */,
@@ -147,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Melvyn Malherbe";
 				TargetAttributes = {
 					D9FD994224B36F1300374B1A = {
@@ -206,6 +236,8 @@
 				D9FD994B24B36F1300374B1A /* ViewController.swift in Sources */,
 				D9FD994724B36F1300374B1A /* AppDelegate.swift in Sources */,
 				D9D551DE24B3B1D4003E437E /* GradientView.swift in Sources */,
+				D9BD7D4E268CAB72006D871C /* NumbersViewController.swift in Sources */,
+				D9BD7D4C268CAAAD006D871C /* BooleanViewController.swift in Sources */,
 				D9FD994924B36F1300374B1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +306,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -334,6 +367,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
